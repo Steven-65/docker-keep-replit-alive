@@ -2,7 +2,7 @@ var http = require('http')
 var request = require('request');
 
 // 这里填你的replit应用的url，多个url用逗号隔开
-let replit_app_urls = ["https://xxx.repl.co", "https://xxx.repl.co", "https://xxx.repl.co"]
+let replit_app_urls = ["https://f02876dc-89f6-44f5-b40f-fb7d60b80cf5.id.repl.co", "https://539fba0d-15ac-44e8-b7cc-9a060a67cfd5.id.repl.co", "https://0b70005a-093b-4cb5-b0d8-457542f837fc.id.repl.co"]
 
 var port = 4000
 var server = http.createServer(function (request, response) {
@@ -34,5 +34,4 @@ function keepalive() {
     }
 }
 
-setInterval(keepalive, 2000);
-
+setInterval(keepalive, 45000);
